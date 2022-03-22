@@ -1,6 +1,7 @@
 <template>
   <main>
       <div class="container">
+          Contents goes here
       </div>
   </main>
 </template>
