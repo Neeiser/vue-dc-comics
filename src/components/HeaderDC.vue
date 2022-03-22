@@ -76,6 +76,9 @@ li{
     a{
         display: inline-block;
         text-decoration: none;
+        line-height: 100px;
+        padding: 0 5px;
+        border-bottom: 3px solid transparent;
     }
 }
 </style>
