@@ -80,7 +80,6 @@ li{
     display: inline-block;
     a{
         display: inline-block;
-        text-decoration: none;
         line-height: 100px;
         padding: 0 15px;
         border-bottom: 3px solid transparent;
