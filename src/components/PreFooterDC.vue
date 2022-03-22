@@ -57,7 +57,7 @@ export default {
 section{
     background-color: $blueDC;
     .container{
-        height: 200px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: center;

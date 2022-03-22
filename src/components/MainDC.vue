@@ -23,7 +23,7 @@ export default {
 main{
     background-color: $darkGray;
     .container{
-        height: 200px;
+        height: 150px;
         display: flex;
         align-items: center;
         color: white;
