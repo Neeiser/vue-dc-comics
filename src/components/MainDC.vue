@@ -22,14 +22,14 @@ export default {
 
 main{
     background-color: $darkGray;
+    .container{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+    }
 }
 
-.container{
-    height: 200px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: 500;
-}
 
 </style>

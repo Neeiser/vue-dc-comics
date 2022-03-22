@@ -85,8 +85,12 @@ a:hover{
 }
 
 a:active{
+    img{
+        transform: scale(90%);
+        transition: 0.05s;
+    }
     background-color: $blueDC;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 </style>
