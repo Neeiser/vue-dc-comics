@@ -2,9 +2,12 @@
   <footer>
       <div class="container">
           <div>
-              <ul>
-                  <li></li>
+              <ul v-for="item in sections" :key="item">
+                  <strong>{{item.name}}</strong>
               </ul>
+                  <li v-for="(subItem, subIndex) in sections[element].subsection" :key="subIndex">
+                      <a :href="subItem.href">{{subItem.text}}</a>
+                  </li>
           </div>
           <div>
               <img src="../assets/img/dc-logo-bg.png" alt="">
@@ -18,48 +21,49 @@ export default {
     name: 'FooterDC',
     data () {
         return {
+            element: 0,
             sections:[
                 {
                     name: 'DC COMICS',
                     subsection:[
-                        {text:'Characters'},
-                        {text:'Comics'},
-                        {text:'Movies'},
-                        {text:'TV'},
-                        {text:'Games'},
-                        {text:'Videos'},
-                        {text:'News'}
+                        {href:'#', text:'Characters'},
+                        {href:'#', text:'Comics'},
+                        {href:'#', text:'Movies'},
+                        {href:'#', text:'TV'},
+                        {href:'#', text:'Games'},
+                        {href:'#', text:'Videos'},
+                        {href:'#', text:'News'}
                     ]
                 },
                 {
                     name: 'DC SHOP',
                     subsection:[
-                        {text:'Shop DC'},
-                        {text:'Shop DC Collectibles'}
+                        {href:'#', text:'Shop DC'},
+                        {href:'#', text:'Shop DC Collectibles'}
                     ]
                 },
                 {
                     name: 'DC',
                     subsection:[
-                        {text:'Terms Of Use'},
-                        {text:'Privacy Policy (New)'},
-                        {text:'Advertising'},
-                        {text:'Jobs'},
-                        {text:'Subscriptions'},
-                        {text:'CPSC Certificates'},
-                        {text:'Ratings'},
-                        {text:'Shop Help'},
-                        {text:'Contact Us'},
+                        {href:'#', text:'Terms Of Use'},
+                        {href:'#', text:'Privacy Policy (New)'},
+                        {href:'#', text:'Advertising'},
+                        {href:'#', text:'Jobs'},
+                        {href:'#', text:'Subscriptions'},
+                        {href:'#', text:'CPSC Certificates'},
+                        {href:'#', text:'Ratings'},
+                        {href:'#', text:'Shop Help'},
+                        {href:'#', text:'Contact Us'},
                     ]
                 },
                 {
                     name: 'SITE',
                     subsection:[
-                        {text:'DC'},
-                        {text:'DC UNIVERSE INFINITE'},
-                        {text:'DC Kids'},
-                        {text:'DC Shop'},
-                        {text:'MAD Magazine'}
+                        {href:'#', text:'DC'},
+                        {href:'#', text:'DC UNIVERSE INFINITE'},
+                        {href:'#', text:'DC Kids'},
+                        {href:'#', text:'DC Shop'},
+                        {href:'#', text:'MAD Magazine'}
                     ]
                 },
             ]
