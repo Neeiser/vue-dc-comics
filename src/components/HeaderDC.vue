@@ -59,6 +59,12 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped lang="scss">
+li{
+    display: inline-block;
+    a{
+        display: inline-block;
+        text-decoration: none;
+    }
+}
 </style>
