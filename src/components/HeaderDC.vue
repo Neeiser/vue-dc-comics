@@ -1,9 +1,13 @@
 <template>
   <header>
-      <img src="../assets/img/dc-logo.png" alt="DC Logo">
-      <ul>
-          <li v-for="(link, index) in categories" :key="index"><a :href="link.href">{{ link.text }}</a></li>
-      </ul>
+      <div class="container">
+        <img src="../assets/img/dc-logo.png" alt="DC Logo">
+        <ul>
+            <li v-for="(link, index) in categories" :key="index">
+                <a :href="link.href">{{ link.text }}</a>
+            </li>
+        </ul>
+      </div>
   </header>
 </template>
 
@@ -60,6 +64,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 li{
     display: inline-block;
     a{
