@@ -85,6 +85,7 @@ footer{
     flex-wrap: wrap;
     height: 385px;
     margin-top: 15px;
+    margin-left: -20px;
 }
 
 ul{
@@ -103,8 +104,6 @@ ul{
 img{
     height: 550px;
     position: absolute;
-    top: 0;
-    right: 0;
     top: -70px;
     right: 75px;
     z-index: 1;
