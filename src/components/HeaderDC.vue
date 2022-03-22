@@ -1,6 +1,9 @@
 <template>
   <header>
-      TEST!
+      <img src="../assets/img/dc-logo.png" alt="DC Logo">
+      <ul>
+          <li></li>
+      </ul>
   </header>
 </template>
 
