@@ -64,11 +64,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '../assets/styles/partials/variables.scss';
 
 .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+img{
+    height: 80px;
 }
 
 li{
@@ -77,8 +82,14 @@ li{
         display: inline-block;
         text-decoration: none;
         line-height: 100px;
-        padding: 0 5px;
+        padding: 0 15px;
         border-bottom: 3px solid transparent;
+        color: $darkGray;
+        font-weight: 500;
+    };
+    a:hover{
+        border-bottom: 3px solid $blueDC;
+        transition: 0.3s;
     }
 }
 </style>
