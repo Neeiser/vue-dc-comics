@@ -79,6 +79,10 @@ section{
     }
 }
 
+section *{
+    z-index:2;
+}
+
 a:hover{
     background-color: $activeBlueDC;
     transition: 0.3s;

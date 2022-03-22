@@ -4,6 +4,7 @@
     <MainDC></MainDC>
     <PreFooterDC></PreFooterDC>
     <FooterDC></FooterDC>
+    <FooterSocialDC></FooterSocialDC>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderDC from './components/HeaderDC.vue'
 import MainDC from './components/MainDC.vue'
 import PreFooterDC from './components/PreFooterDC.vue'
 import FooterDC from './components/FooterDC.vue'
+import FooterSocialDC from './components/FooterSocialDC.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     HeaderDC,
     MainDC,
     PreFooterDC,
-    FooterDC
+    FooterDC,
+    FooterSocialDC
   }
 }
 </script>
