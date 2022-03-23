@@ -1,6 +1,6 @@
 <template>
     <main>
-        <div class="container">
+        <div class="container gridDC">
             <GridShowcaseDC v-for="card in arrComics" :key="card.type"
             :comic-img="card.thumb"
             :comic-series="card.series"
@@ -104,15 +104,17 @@ export default {
 
 main{
     background-color: $darkGray;
-    .container{
+    .gridDC{
         display: flex;
         align-items: stretch;
         flex-wrap: wrap;
         justify-content: center;
         color: white;
         font-weight: 500;
+        padding: 100px 0;
     }
 }
+
 
 
 </style>

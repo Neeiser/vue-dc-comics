@@ -26,6 +26,11 @@ export default {
         width: 200px;
         padding: 10px;
     }
+    /* img{     SE VOGLIO LE IMMAGINI TAGLIATE COME DA ESERCIZIO. A ME PIACE CON L'IMMAGINE INTERA.
+        height: 230px;
+        object-fit: cover;
+        object-position: top;
+    } */
     h2{
         font-size: 1rem;
     }
