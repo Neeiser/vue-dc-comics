@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <HeaderDC></HeaderDC>
+    <HeroDC></HeroDC>
     <MainDC></MainDC>
     <PreFooterDC></PreFooterDC>
     <FooterDC></FooterDC>
@@ -10,6 +11,7 @@
 
 <script>
 import HeaderDC from './components/HeaderDC.vue'
+import HeroDC from './components/HeroDC.vue'
 import MainDC from './components/MainDC.vue'
 import PreFooterDC from './components/PreFooterDC.vue'
 import FooterDC from './components/FooterDC.vue'
@@ -19,6 +21,7 @@ export default {
   name: 'App',
   components: {
     HeaderDC,
+    HeroDC,
     MainDC,
     PreFooterDC,
     FooterDC,
