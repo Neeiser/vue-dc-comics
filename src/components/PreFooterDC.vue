@@ -1,12 +1,12 @@
 <template>
-  <section>
-      <div class="container">
-          <a v-for="(item,index) in tags" :key="index" :href="item.href">
-              <img :src="item.img" alt="">
-              <span>{{ item.text }}</span>
-          </a>
-      </div>
-  </section>
+    <section>
+        <div class="container">
+            <a v-for="(item,index) in tags" :key="index" :href="item.href">
+                <img :src="item.img" alt="">
+                <span>{{ item.text }}</span>
+            </a>
+        </div>
+    </section>
 </template>
 
 <script>

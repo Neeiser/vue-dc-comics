@@ -1,14 +1,14 @@
 <template>
-  <header>
-      <div class="container">
-        <img src="../assets/img/dc-logo.png" alt="DC Logo">
-        <ul>
-            <li v-for="(link, index) in categories" :key="index">
-                <a :href="link.href">{{ link.text }}</a>
-            </li>
-        </ul>
-      </div>
-  </header>
+    <header>
+        <div class="container">
+            <img src="../assets/img/dc-logo.png" alt="DC Logo">
+            <ul>
+                <li v-for="(link, index) in categories" :key="index">
+                    <a :href="link.href">{{ link.text }}</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 </template>
 
 <script>
