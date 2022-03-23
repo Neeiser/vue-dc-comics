@@ -1,11 +1,15 @@
 <template>
     <main>
-        <div class="container gridDC">
-            <GridShowcaseDC v-for="card in arrComics" :key="card.type"
-            :comic-img="card.thumb"
-            :comic-series="card.series"
-            >
-            </GridShowcaseDC>
+        <div class="container containerShowcase">
+            <h1>CURRENT SERIES</h1>
+            <div class="gridDC">
+                <GridShowcaseDC v-for="card in arrComics" :key="card.type"
+                :comic-img="card.thumb"
+                :comic-series="card.series"
+                >
+                </GridShowcaseDC>
+            </div>
+            <button>LOAD MORE</button>
         </div>
     </main>
 </template>
@@ -111,10 +115,37 @@ main{
         justify-content: center;
         color: white;
         font-weight: 500;
-        padding: 100px 0;
+        padding: 50px 0;
     }
 }
-
+.containerShowcase{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+    h1{
+        background-color: $blueDC;
+        color: white;
+        padding: 10px 40px;
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+    button{
+        color: white;
+        background-color: $blueDC;
+        border: none;
+        padding: 10px 40px;
+    }
+    
+    button:active{
+        background-color: $activeBlueDC;
+        padding: 10px 35px;
+        transition: 0.1s;
+    }
+}
 
 
 </style>
