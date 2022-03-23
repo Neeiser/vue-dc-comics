@@ -19,7 +19,8 @@
                     <a href=""><li v-for="item in subTextSites" :key="item">{{item.text}}</li></a>
                 </ul>     
             </div>
-            <img src="../assets/img/dc-logo-bg.png" alt="">
+            <div class="footer-dc-logo">
+            </div>
         </div>
   </footer>
 </template>
@@ -88,6 +89,17 @@ footer{
     margin-left: -20px;
 }
 
+.footer-dc-logo{
+    background-image: url(../assets/img/dc-logo-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    height: 400px;
+    width: 600px;
+    
+}
+
 ul{
     color: white;
     padding: 20px;
@@ -101,17 +113,5 @@ ul{
     }
 }
 
-img{
-    height: 550px;
-    position: absolute;
-    top: -70px;
-    right: 75px;
-    z-index: 1;
-}
-
-.footer-social{
-    height: 100px;
-    background-color: #464646;
-}
 
 </style>
