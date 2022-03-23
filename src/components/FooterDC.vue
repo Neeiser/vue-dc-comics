@@ -4,19 +4,19 @@
             <div class="footer-list">
                 <ul>
                     <strong>DC COMICS</strong>
-                    <a href=""><li v-for="item in subTextComics" :key="item">{{item.text}}</li></a>
+                    <a href=""><li v-for="item in subTextComics" :key="item.id">{{item.text}}</li></a>
                 </ul>
                 <ul>
                     <strong>SHOP</strong>
-                    <a href=""><li v-for="item in subTextShop" :key="item">{{item.text}}</li></a>
+                    <a href=""><li v-for="item in subTextShop" :key="item.id">{{item.text}}</li></a>
                 </ul>
                 <ul>
                     <strong>DC</strong>
-                    <a href=""><li v-for="item in subTextDC" :key="item">{{item.text}}</li></a>
+                    <a href=""><li v-for="item in subTextDC" :key="item.id">{{item.text}}</li></a>
                 </ul>
                 <ul>
                     <strong>SITES</strong>
-                    <a href=""><li v-for="item in subTextSites" :key="item">{{item.text}}</li></a>
+                    <a href=""><li v-for="item in subTextSites" :key="item.id">{{item.text}}</li></a>
                 </ul>     
             </div>
             <div class="footer-dc-logo">

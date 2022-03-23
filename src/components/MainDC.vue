@@ -3,7 +3,7 @@
         <div class="container containerShowcase">
             <h1>CURRENT SERIES</h1>
             <div class="gridDC">
-                <GridShowcaseDC v-for="card in arrComics" :key="card.type"
+                <GridShowcaseDC v-for="card in arrComics" :key="card.series"
                 :comic-img="card.thumb"
                 :comic-series="card.series"
                 >
